@@ -1,0 +1,15 @@
+{
+    "model_type": "DecisionTreeClassifier",
+    "features": [
+        "pclass",
+        "sex",
+        "age",
+        "sibsp",
+        "parch",
+        "fare",
+        "embarked"
+    ],
+    "depth": 4,
+    "n_leaves": 15,
+    "rules": "|--- sex <= 0.50\n|   |--- pclass <= 1.50\n|   |   |--- age <= 53.00\n|   |   |   |--- fare <= 25.94\n|   |   |   |   |--- class: 0\n|   |   |   |--- fare >  25.94\n|   |   |   |   |--- class: 1\n|   |   |--- age >  53.00\n|   |   |   |--- age <= 75.50\n|   |   |   |   |--- class: 0\n|   |   |   |--- age >  75.50\n|   |   |   |   |--- class: 1\n|   |--- pclass >  1.50\n|   |   |--- age <= 13.00\n|   |   |   |--- sibsp <= 2.00\n|   |   |   |   |--- class: 1\n|   |   |   |--- sibsp >  2.00\n|   |   |   |   |--- class: 0\n|   |   |--- age >  13.00\n|   |   |   |--- parch <= 0.50\n|   |   |   |   |--- class: 0\n|   |   |   |--- parch >  0.50\n|   |   |   |   |--- class: 0\n|--- sex >  0.50\n|   |--- pclass <= 2.50\n|   |   |--- age <= 56.50\n|   |   |   |--- fare <= 28.86\n|   |   |   |   |--- class: 1\n|   |   |   |--- fare >  28.86\n|   |   |   |   |--- class: 1\n|   |   |--- age >  56.50\n|   |   |   |--- class: 0\n|   |--- pclass >  2.50\n|   |   |--- fare <= 20.80\n|   |   |   |--- parch <= 1.50\n|   |   |   |   |--- class: 0\n|   |   |   |--- parch >  1.50\n|   |   |   |   |--- class: 1\n|   |   |--- fare >  20.80\n|   |   |   |--- age <= 5.50\n|   |   |   |   |--- class: 0\n|   |   |   |--- age >  5.50\n|   |   |   |   |--- class: 0\n"
+}
