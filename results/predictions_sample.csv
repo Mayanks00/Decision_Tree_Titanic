@@ -1,0 +1,6 @@
+pclass,sex,age,sibsp,parch,fare,embarked,Prediction,Result
+3,0,22.0,1,0,7.25,2,0,Not Survived
+1,1,38.0,1,0,71.2833,0,1,Survived
+3,1,26.0,0,0,7.925,2,1,Survived
+1,0,35.0,0,0,53.1,0,1,Survived
+2,1,28.0,0,0,13.0,1,1,Survived
